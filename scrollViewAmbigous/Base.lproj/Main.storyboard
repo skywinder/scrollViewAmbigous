@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollViewAmbigous" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-Bv-t6I">
+                                <rect key="frame" x="16" y="20" width="568" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdR-jY-Bnp">
+                                        <rect key="frame" x="150" y="140" width="269" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="269" id="DLr-bh-EsP"/>
+                                            <constraint firstAttribute="height" constant="151" id="wJd-n8-eYr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="top" constant="140" id="C4T-oK-atI"/>
+                                    <constraint firstAttribute="centerX" secondItem="zdR-jY-Bnp" secondAttribute="centerX" id="HeW-SY-4Md"/>
+                                    <constraint firstAttribute="trailing" secondItem="zdR-jY-Bnp" secondAttribute="trailing" constant="149" id="OSb-d2-hXR"/>
+                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="leading" secondItem="Jbw-Bv-t6I" secondAttribute="leading" constant="150" id="dFQ-bB-a3x"/>
+                                    <constraint firstAttribute="bottom" secondItem="zdR-jY-Bnp" secondAttribute="bottom" constant="289" id="uAZ-TY-ZuX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UQK-oo-LVN"/>
+                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gGC-Dg-7M9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="bottom" id="j9e-11-bal"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jbw-Bv-t6I" secondAttribute="trailing" id="rp7-Dl-SiB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
