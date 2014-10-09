@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,14 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-Bv-t6I">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-Bv-t6I">
                                 <rect key="frame" x="16" y="20" width="568" height="580"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdR-jY-Bnp">
-                                        <rect key="frame" x="150" y="140" width="269" height="151"/>
+                                        <rect key="frame" x="209" y="140" width="150" height="100"/>
+                                        <color key="backgroundColor" red="0.9450981021" green="0.53333336109999996" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="269" id="DLr-bh-EsP"/>
-                                            <constraint firstAttribute="height" constant="151" id="wJd-n8-eYr"/>
+                                            <constraint firstAttribute="width" constant="150" id="m4Y-Vl-4e8"/>
+                                            <constraint firstAttribute="height" constant="100" id="uqC-yQ-cB6"/>
                                         </constraints>
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,20 +33,26 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="top" constant="140" id="C4T-oK-atI"/>
-                                    <constraint firstAttribute="centerX" secondItem="zdR-jY-Bnp" secondAttribute="centerX" id="HeW-SY-4Md"/>
-                                    <constraint firstAttribute="trailing" secondItem="zdR-jY-Bnp" secondAttribute="trailing" constant="149" id="OSb-d2-hXR"/>
-                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="leading" secondItem="Jbw-Bv-t6I" secondAttribute="leading" constant="150" id="dFQ-bB-a3x"/>
-                                    <constraint firstAttribute="bottom" secondItem="zdR-jY-Bnp" secondAttribute="bottom" constant="289" id="uAZ-TY-ZuX"/>
+                                    <constraint firstAttribute="bottom" secondItem="zdR-jY-Bnp" secondAttribute="bottom" constant="289" id="2kz-Z2-0bf"/>
+                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="leading" secondItem="Jbw-Bv-t6I" secondAttribute="leading" constant="10" id="EnX-Lt-2zr"/>
+                                    <constraint firstAttribute="centerX" secondItem="zdR-jY-Bnp" secondAttribute="centerX" id="FIg-RB-ikS"/>
+                                    <constraint firstItem="zdR-jY-Bnp" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="top" constant="140" id="JF7-4x-FKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="zdR-jY-Bnp" secondAttribute="trailing" constant="10" id="ezN-Kr-ywl"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EnX-Lt-2zr"/>
+                                        <exclude reference="ezN-Kr-ywl"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UQK-oo-LVN"/>
-                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gGC-Dg-7M9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="bottom" id="j9e-11-bal"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jbw-Bv-t6I" secondAttribute="trailing" id="rp7-Dl-SiB"/>
+                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2sj-Oi-Bjw"/>
+                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Ak-WO-t6v"/>
+                            <constraint firstItem="Jbw-Bv-t6I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="N9e-Tg-Frc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jbw-Bv-t6I" secondAttribute="bottom" id="tST-UX-q4y"/>
                         </constraints>
                     </view>
                 </viewController>
