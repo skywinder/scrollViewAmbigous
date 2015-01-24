@@ -32,3 +32,7 @@ You can check it in my example project, that demonstrating how to fix this issue
 **P.S.**
 
 I don't know why it works and how Xcode detect which constraint is more prioritised (because I'm not set priority for these constraints explicity), but I'll be thankful if someone explain, why it works.
+
+Aligning multiple elements?
+==================
+When you want to align multiple elements, say three button in one vertical line, you'll have to set the above said additional constraints to the ***bottom most*** element. (example included)
